@@ -17,7 +17,7 @@ let currentlyPlaying = true;
 
 // Define game logic to check doors, progress game, end game, and choose a random chore door
 const isClicked = (door) => {
-    if (door.src !== closedDoorPath) {
+    if (door.src === closedDoorPath) {
         return true;
     } else {
         return false;
